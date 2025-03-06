@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Резюме</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<div class="Content">
+    <header class="header" id="screen1">
+        <img class="logo" width="40" height="40" alt="Company Logo">
+        <nav class="menu" aria-label="Main Navigation">
+            <a href='#screen2' class="menu-about">About me</a>
+            <a href='#screen3' class="menu-education">Education</a>
+            <a href='#screen4' class="menu-work">Work Experience</a>
+            <a href='#screen5' class="menu-skills">Skills</a>
+            <a href='#screen6' class="menu-contacts">Contacts</a>
+        </nav>
+    </header>
+
+    <section class="about" id="screen2">
+        <p class="hello">
+            Hello!<br>
+            My name is Pascal Khuri<br>
+            I'm creative developer
+        </p>
+        <img class="Image" width="1140" height="400" alt="Portfolio Image">
+    </section>
+
+    <section class="education" id="screen3">
+        <div role="heading" aria-level="2" class="text-very-big" style="line-height: 48px;">Education</div>
+        <div class="educations-table">
+            <div class="col">
+                <section class="education-cell">
+                    <div class="education-cell-header">
+                        <div class="text-big">1514 school</div>
+                        <div class="text-subheader">
+                            General education</div>
+                    </div>
+                    <time class="text-year" datetime="2008-2021">2010 - 2021</time>
+                </section>
+            </div>
+            <div class="col">
+                <section class="education-cell">
+                    <div class="education-cell-header">
+                        <div class="text-big">ITMO University</div>
+                        <div class="text-subheader">Bachelor's degree - Computer Technologies</div>
+                    </div>
+                    <time class="text-year" datetime="2021-2026">2021 - 2026</time>
+                </section>
+            </div>
+        </div>
+    </section>
+
+    <section class="work" id="screen4">
+        <div role="heading" aria-level="2" class="text-very-big-work" style="line-height: 48px;">Work Experience</div>
+        <div class="buttons-group" role="group" aria-label="Company Selection">
+            <a href="#" class="button-frl">Freelance</a>
+        </div>
+        <div class="work-info">
+            <div class="col" style="gap : 16px">
+                <div class="work-box">
+                    <div class="text-big-work">Freelance Developer</div>
+                    <div class="text-middle-work">Saint-Petersburg, Russia</div>
+                </div>
+                <div class="text-year-2">December 2021 - Jan 2022</div>
+                <div class="text1">
+                    <p class="parag">Выполнял задачи на разных языках программирования, которые мне давал сосед по комнате. Среди
+                    языков были Java, Kotlin и Python.</p>
+                    <p class="parag">Также я дистанционно преподавал для детей язык Python.
+                        Всего у меня было 4 ученика, кто-то занимался несколько раз в неделю.
+                        Был один ученик к которому я приходил очно, так как из-за его рассеянного внимания
+                        и не увлеченности предметом мы бы не смогли заниматься дистанционно.
+                    </p>
+                </div>
+            </div>
+            <img class="Image" style="width: 554px;height: 400px;flex-shrink: 0; background-color: black" alt="Little Portfolio Image"/>
+        </div>
+
+    </section>
+
+    <section class="skills" id="screen5">
+        <div role="heading" aria-level="2" class="text-very-big" style="line-height: 48px">Personality</div>
+        <div class="bars">
+            <div class="col">
+                <div class="skills-bar energy">
+                    <p class="skill-text">Энергия</p>
+                    <progress value="64" max="100"></progress>
+                    <div class="under-bar">
+                        <p>Экстраверт</p>
+                        <p>Интроверт</p>
+                    </div>
+                </div>
+                <div class="skills-bar mind">
+                    <p class="skill-text">Разум</p>
+                    <progress value="37" max="100"></progress>
+                    <div class="under-bar">
+                        <p>Интуитивные</p>
+                        <p>Реалистичные</p>
+                    </div>
+                </div>
+                <div class="skills-bar nature">
+                    <p class="skill-text">Природа</p>
+                    <progress value="58" max="100"></progress>
+                    <div class="under-bar">
+                        <p>Логика</p>
+                        <p>Принципы</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="skills-bar tactics">
+                    <p class="skill-text">Тактика</p>
+                    <progress value="81" max="100"></progress>
+                    <div class="under-bar">
+                        <p>Планирующие</p>
+                        <p>Ищущие</p>
+                    </div>
+                </div>
+                <div class="skills-bar personality">
+                    <p class="skill-text">Личность</p>
+                    <progress value="74" max="100"></progress>
+                    <div class="under-bar">
+                        <p>Уверенные</p>
+                        <p>Осторожные</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <form class="skills-form" aria-labelledby="add-skill">
+            <div id="add-skill" class="text-big-skill">Add new skill</div>
+            <div class="row">
+                <div class="form-field">
+                    <label for="skill-name" class="text-normal">Skill name</label>
+                    <input type="text" id="skill-name" class="text-field-wrapper" required aria-required="true">
+                </div>
+
+                <div class="form-field">
+                    <label for="skill-percentage" class="text-normal">Skill proficiency percentage, %</label>
+                    <input type="number" id="skill-percentage" class="text-field-wrapper" min="0" max="100" required>
+                </div>
+                <button type="submit" class="btn">Add</button>
+            </div>
+        </form>
+    </section>
+
+    <section class="block" id='screen6'>
+        <div role="heading" aria-level="2" class="text-very-big" style="line-height: 48px">Contacts</div>
+        <div class="contacts-box" style="height: 400px; gap:32px">
+            <a href="https://yandex.ru/maps/-/CHB6JTYC">
+                <div class="info-box">
+                    <img class="pic-pin" width="40" height="40" alt="Location Pin Icon">
+                    <div class="header-contacts">
+                        <div class="text-big-contacts">Address</div>
+                        <div class="text-subheader-contacts">23 Lensoveta str., Spb</div>
+                    </div>
+                </div>
+            </a>
+
+            <a href="tel:+79164504186">
+                <div class="info-box">
+                    <img class="pic-phone" width="41" height="40" alt="Telephone Icon">
+                    <div class="header-contacts">
+                        <div class="text-big-contacts">Phone</div>
+                        <div class="text-subheader-contacts">+7 (916) 450 41 86</div>
+                    </div>
+                </div>
+            </a>
+
+            <a href="mailto:paskal_khuri@mail.ru">
+                <div class="info-box">
+                    <img class="pic-mail" width="41" height="40" alt="Mail Icon">
+                    <div class="header-contacts">
+                        <div class="text-big-contacts">E-Mail</div>
+                        <div class="text-subheader-contacts">paskal_khuri@mail.ru</div>
+                    </div>
+                </div>
+            </a>
+        </div>
+    </section>
+
+    <footer class="footer" id='screen7'>
+        <div class="footer-links">
+            <a href="https://www.instagram.com/pascal_pasechnik?igsh=MTA4NzQwM3FqZGNqcg%3D%3D&utm_source=qr">
+                <img class="pic-instagram" width="24" height="24" alt="Instagram">
+            </a>
+
+            <a href="https://github.com/pascalcheek">
+                <img class="pic-github" width="24" height="24" alt="Github">
+            </a>
+        </div>
+        <div class="text-date-footer" >&copy; 2025</div>
+    </footer>
+</div>
+</body>
+</html>
